@@ -1,23 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:padding="24dp"
     tools:context="com.lyricaloriginal.mnistandroid.MainActivity">
 
-    <Button
-        android:id="@+id/classify_btn1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:text="数字の識別1" />
+    <GridView
+        android:columnWidth="52dp"
+        android:numColumns="5"
+        android:id="@+id/target_image_grid_view"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="7"
+       ></GridView>
 
-    <Button
-        android:id="@+id/classify_btn2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/classify_btn1"
-        android:layout_centerHorizontal="true"
-        android:text="数字の識別2" />
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="3"
+        android:orientation="vertical">
 
-</RelativeLayout>
+        <ImageView
+            android:id="@+id/selected_image_view"
+            android:layout_width="@dimen/image_size"
+            android:layout_height="@dimen/image_size"
+            android:scaleType="fitXY"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:id="@+id/result_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/selected_image_view"
+            android:layout_centerHorizontal="true"
+            android:textSize="24sp" />
+    </RelativeLayout>
+
+</LinearLayout>

@@ -9,7 +9,7 @@ android {
     defaultConfig {
         applicationId "com.lyricaloriginal.mnistandroid"
         minSdkVersion 21
-        targetSdkVersion 26
+        targetSdkVersion 23 // 本当は危険だが、サンプルデータをassetsに入れている以上こうせざるをえない。
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
