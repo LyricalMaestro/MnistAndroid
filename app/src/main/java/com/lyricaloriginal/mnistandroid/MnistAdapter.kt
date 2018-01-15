@@ -11,7 +11,7 @@ import android.widget.ImageView
 import java.io.File
 
 /**
- * Created by shinichitanimoto on 2018/01/15.
+ * Created by LyricalMaestro0 on 2018/01/15.
  */
 class MnistAdapter(context: Context, objects: List<File>?) : ArrayAdapter<File>
     (context, 0, objects){
