@@ -6,7 +6,7 @@ import java.io.FileOutputStream
 import java.io.InputStream
 
 /**
- * Created by shinichitanimoto on 2018/01/15.
+ * Created by LyricalMaestro0 on 2018/01/15.
  */
 fun copyDirectory(assetManager: AssetManager, fromFilter : String, to: File) {
     if (!to.exists()) {
