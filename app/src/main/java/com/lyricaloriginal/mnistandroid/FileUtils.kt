@@ -25,7 +25,7 @@ fun copyDirectory(assetManager: AssetManager, fromFilter : String, to: File) {
 }
 
 fun copyFile(from : InputStream, to :File){
-    var len : Int = 0
+    var len = 0
     var buf : ByteArray = kotlin.ByteArray(256)
     FileOutputStream(to).use{
         len = from.read(buf, 0, 256)
